@@ -13,3 +13,10 @@ Therefore, both the publisher and subscriber interact with the same message brok
 
 # Running RabbitMQ as message broker
 ![alt text](<docs/running RabbitMQ.jpg>)
+
+# Sending and processing event
+![alt text](image-1.png)
+![alt text](image.png)
+By using a message broker (in this case RabbitMQ), every time we run the Subscriber and Publisher programs using `cargo run`, the Publisher sends data to the message broker, which is then received by the Subscriber. From the illustration provided, it appears that the Publisher sends data once to the message broker and then the Subscriber receives this data. In other words, in this process, the Publisher acts as the data sender, while the Subscriber acts as the receiver.
+
+# 
